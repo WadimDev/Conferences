@@ -1,9 +1,9 @@
 package ua.springboot.training.group6.conferences.adaptors.persistence;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import ua.springboot.training.group6.conferences.domain.Conference;
 
-//FIXME CrudRepository: domain type, type of id
-public interface ConferenceDao extends CrudRepository<String, String> {
+public interface ConferenceDao extends JpaRepository<Conference, Long> {
 
 
 }
