@@ -1,18 +1,20 @@
 package ua.springboot.training.group6.conferences.service;
 
-import ua.springboot.training.group6.conferences.domain.Conference;
-import ua.springboot.training.group6.conferences.domain.Talk;
+import ua.springboot.training.group6.conferences.domain.ConferenceRequest;
+import ua.springboot.training.group6.conferences.domain.ConferenceResponse;
+import ua.springboot.training.group6.conferences.domain.TalkRequest;
+import ua.springboot.training.group6.conferences.domain.TalkResponse;
 
 import java.util.List;
 
 public interface ConferenceService {
-    void createConference(Conference conference);
+    void createConference(ConferenceRequest conferenceRequest);
 
-    List<Conference> getConferences();
+    List<ConferenceResponse> getConferences();
 
-    void modifyConference(String conferenceId, Conference conference);
+    void modifyConference(String conferenceId, ConferenceRequest conferenceRequest);
 
-    void createTalkForConference(String conferenceId, Talk talk);
+    void createTalkForConference(String conferenceId, TalkRequest talkRequest);
 
-    List<Talk> getTalsForConference(String conferenceId);
+    List<TalkResponse> getTalksForConference(String conferenceId);
 }
