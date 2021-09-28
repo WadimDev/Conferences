@@ -19,14 +19,9 @@ public class ConferenceRequest {
     @NotBlank
     private String theme;
 
-    //    @NotBlank
-//    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-//    @JsonFormat(pattern = "yyyy-MM-dd")
     @NotNull
-//    private LocalDate date;
     private Date date;
 
-    //@NotBlank
     @Min(101)
     private int participantsCount;
 }
