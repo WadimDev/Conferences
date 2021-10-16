@@ -1,9 +1,9 @@
 package ua.springboot.training.group6.conferences.service;
 
-import ua.springboot.training.group6.conferences.domain.ConferenceRequest;
-import ua.springboot.training.group6.conferences.domain.ConferenceResponse;
-import ua.springboot.training.group6.conferences.domain.TalkRequest;
-import ua.springboot.training.group6.conferences.domain.TalkResponse;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.ConferenceRequest;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.ConferenceResponse;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.TalkRequest;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.TalkResponse;
 
 import java.util.List;
 

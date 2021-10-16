@@ -3,15 +3,15 @@ package ua.springboot.training.group6.conferences.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.ConferenceRequest;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.ConferenceResponse;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.TalkRequest;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.TalkResponse;
 import ua.springboot.training.group6.conferences.adaptors.persistence.ConferenceDao;
 import ua.springboot.training.group6.conferences.adaptors.persistence.TalkDao;
 import ua.springboot.training.group6.conferences.adaptors.persistence.TalkTypeDao;
 import ua.springboot.training.group6.conferences.adaptors.persistence.entity.Conference;
 import ua.springboot.training.group6.conferences.adaptors.persistence.entity.Talk;
-import ua.springboot.training.group6.conferences.domain.ConferenceRequest;
-import ua.springboot.training.group6.conferences.domain.ConferenceResponse;
-import ua.springboot.training.group6.conferences.domain.TalkRequest;
-import ua.springboot.training.group6.conferences.domain.TalkResponse;
 import ua.springboot.training.group6.conferences.exception.CountTalksException;
 import ua.springboot.training.group6.conferences.exception.DateException;
 import ua.springboot.training.group6.conferences.exception.DuplicateException;
@@ -29,8 +29,8 @@ public class ConferenceServiceImpl implements ConferenceService {
     private static final int COUNT_RAPPORTEUR_TALKS_FOR_CONFERENCE = 3;
 
     private final ConferenceDao conferenceDao;
-    private final TalkTypeDao talkTypeDao;
     private final TalkDao talkDao;
+    private final TalkTypeDao talkTypeDao;
 
     @Override
     public ConferenceResponse createConference(ConferenceRequest conferenceRequest) {

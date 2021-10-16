@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import ua.springboot.training.group6.conferences.domain.TalkRequest;
-import ua.springboot.training.group6.conferences.domain.TalkResponse;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.TalkRequest;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.TalkResponse;
 
 import javax.persistence.*;
 

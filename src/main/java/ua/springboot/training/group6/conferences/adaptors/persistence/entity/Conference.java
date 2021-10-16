@@ -2,8 +2,8 @@ package ua.springboot.training.group6.conferences.adaptors.persistence.entity;
 
 import lombok.*;
 import org.modelmapper.ModelMapper;
-import ua.springboot.training.group6.conferences.domain.ConferenceRequest;
-import ua.springboot.training.group6.conferences.domain.ConferenceResponse;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.ConferenceRequest;
+import ua.springboot.training.group6.conferences.adaptors.api.dto.ConferenceResponse;
 
 import javax.persistence.*;
 import java.sql.Date;
